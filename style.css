@@ -1,31 +1,47 @@
 body{
     display: grid;
     margin:0;
-    grid-template-areas: "nav nav nav batata"
-                        "header header header batata"
-                        "section section section batata"
-                        "footer footer footer batata";
-    grid-template-rows: 5vh 20vh 60vh 15vh;
+    grid-template-areas: "nav nav nav nav"
+                        "header header header header"
+                        "section section section section"
+                        "footer footer footer footer";
+    grid-template-rows: 10vh 10vh 70vh 10vh;
     grid-template-columns: 25vw 25vw 20vw 30vw;
-    grid-gap: 1vh;
-   
+    background-color:#aa0505;
+    color: #fbca03;
 }
 nav{grid-area: nav;
-    background-color: blueviolet;
-
+    background-color:#aa0505;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+}
+nav div img{
+    margin:10px;
+    align-items: inherit;
+    
+}
+nav div:nth-child(2){
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+}
+a{
+    text-decoration: none;
+    color: #fbca03;
+     
 }
 header{grid-area: header;
-    background-color: aqua;
-
 }
 section{grid-area: section;
-    background-color: brown;
-
+    background-image: url('images/vingadores.jpg');
+    display: flex;
 }
-aside{grid-area: batata;
-    background-color: blue;
 
-}
 footer{grid-area: footer;
-    background-color: yellow;
+    font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 
+}
