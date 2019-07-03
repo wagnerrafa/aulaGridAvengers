@@ -10,6 +10,7 @@ body{
     background-color:#aa0505;
     color: #fbca03;
 }
+
 nav{grid-area: nav;
     background-color:#aa0505;
     font-size: 25px;
