@@ -1,0 +1,31 @@
+body{
+    display: grid;
+    margin:0;
+    grid-template-areas: "nav nav nav batata"
+                        "header header header batata"
+                        "section section section batata"
+                        "footer footer footer batata";
+    grid-template-rows: 5vh 20vh 60vh 15vh;
+    grid-template-columns: 25vw 25vw 20vw 30vw;
+    grid-gap: 1vh;
+   
+}
+nav{grid-area: nav;
+    background-color: blueviolet;
+
+}
+header{grid-area: header;
+    background-color: aqua;
+
+}
+section{grid-area: section;
+    background-color: brown;
+
+}
+aside{grid-area: batata;
+    background-color: blue;
+
+}
+footer{grid-area: footer;
+    background-color: yellow;
+
