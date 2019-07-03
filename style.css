@@ -5,7 +5,7 @@ body{
                         "header header header header"
                         "section section section section"
                         "footer footer footer footer";
-    grid-template-rows: 10vh 10vh 70vh 10vh;
+    grid-template-rows: 10vh 0vh 80vh 10vh;
     grid-template-columns: 25vw 25vw 20vw 30vw;
     background-color:#aa0505;
     color: #fbca03;
@@ -13,21 +13,21 @@ body{
 nav{grid-area: nav;
     background-color:#aa0505;
     font-size: 25px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     display: flex;
     align-items: center;
     justify-content: space-between;
     text-decoration: none;
 }
 nav div img{
-    margin:10px;
-    align-items: inherit;
+    margin:0px;
+    align-items: flex-start;
     
 }
 nav div:nth-child(2){
     display: flex;
     justify-content: space-evenly;
-    width: 50%;
+    width: 30%;
 }
 a{
     text-decoration: none;
@@ -42,6 +42,16 @@ section{grid-area: section;
 }
 
 footer{grid-area: footer;
-    font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  
 
+}
+h1{
+    color: black;
+    font-size: 50px;
+    justify-content: center;
+    display: flex;
+}
+div{
+    margin: 34px;
+    font-size: 22px;
 }
