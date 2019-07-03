@@ -54,4 +54,6 @@ h1{
 div{
     margin: 34px;
     font-size: 22px;
+}::-webkit-scrollbar {
+    width: 0px;
 }
