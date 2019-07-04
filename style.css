@@ -1,41 +1,38 @@
 body{
     display: grid;
     margin:0;
-    grid-template-areas: "nav nav nav nav"
-                        "header header header header"
+    grid-template-areas: "header header header header"
                         "section section section section"
                         "footer footer footer footer";
-    grid-template-rows: 10vh 0vh 80vh 10vh;
+    grid-template-rows: 10vh 80vh 10vh;
     grid-template-columns: 25vw 25vw 20vw 30vw;
     background-color:#aa0505;
     color: #fbca03;
 }
+.menu-hamburguer{
+    display: none;
+   
+}
 
-nav{grid-area: nav;
+header{grid-area: header;
     background-color:#aa0505;
-    font-size: 25px;
+    font-size: 1.2rem;
     font-family: 'Times New Roman', Times, serif;
     display: flex;
     align-items: center;
     justify-content: space-between;
     text-decoration: none;
+    padding: 10px 20px;
+    margin: 10px 20px;
 }
-nav div img{
-    margin:0px;
-    align-items: flex-start;
+img{
+    width: 50px;
     
 }
-nav div:nth-child(2){
-    display: flex;
-    justify-content: space-evenly;
-    width: 30%;
-}
-a{
+nav a{
     text-decoration: none;
     color: #fbca03;
      
-}
-header{grid-area: header;
 }
 section{grid-area: section;
     background-image: url('images/vingadores.jpg');
@@ -43,9 +40,7 @@ section{grid-area: section;
 }
 
 footer{grid-area: footer;
-  
-
-}
+  }
 h1{
     color: black;
     font-size: 50px;
@@ -57,4 +52,24 @@ div{
     font-size: 22px;
 }::-webkit-scrollbar {
     width: 0px;
+}
+@media(max-width: 700px){
+    /* nav{
+        
+
+    } */
+    nav{position: absolute;
+        right: 0;
+        top: 70px;
+        width: 100%;
+        text-align: right;
+    }
+    nav a{
+        display: block;
+        padding: 5px 20px;
+    }
+    .menu-hamburguer{
+        display: block;
+        right: 0;
+    }
 }
